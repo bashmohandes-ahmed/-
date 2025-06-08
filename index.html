@@ -1,127 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Farag | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Roboto', Arial, sans-serif; background: #fafbfc; margin: 0; color: #222; }
-        .container { max-width: 900px; margin: 40px auto; background: #fff; box-shadow: 0 2px 16px #eee; border-radius: 8px; padding: 32px; }
-        header { text-align: center; margin-bottom: 32px; }
-        h1 { margin: 0; font-size: 2.5rem; }
-        .contact { font-size: 1.1rem; margin-top: 8px; }
-        .contact a { color: #1565c0; text-decoration: none; margin: 0 6px; }
-        section { margin-top: 36px; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 6px; margin-bottom: 18px; font-size: 1.5rem; }
-        ul { padding-left: 20px; }
-        .skills, .experience { display: flex; gap: 24px; flex-wrap: wrap; }
-        .skills-list, .exp-list { flex: 1; min-width: 280px; }
-        .project { margin-bottom: 28px; }
-        .project-title { font-size: 1.15rem; font-weight: bold; }
-        .project-date { font-size: 0.96rem; color: #555; }
-        .project-details ul { margin-top: 8px; }
-        .resume-img { display: block; margin: 40px auto 0; max-width: 100%; border-radius: 6px; }
-        @media (max-width: 600px) {
-            .container { padding: 10px; }
-            .skills, .experience { flex-direction: column; }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Ahmed Farag</h1>
-            <div class="contact">
-                Egypt &mdash;
-                <a href="mailto:ahmedusamaofficial1@gmail.com">ahmedusamaofficial1@gmail.com</a> /
-                <a href="mailto:ahmedusama1256@gmail.com">ahmedusama1256@gmail.com</a> /
-                <span>+201158025442</span>
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+        <!-- A&A -->
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h3>A&A</h3>
+                <span class="timeline-role">Software Engineer</span>
+                <div class="timeline-location">Remote</div>
+                <div class="timeline-date">August 2024 &ndash; Present</div>
+                <ul>
+                    <li>Worked as a software engineer contributing to various engineering projects.</li>
+                </ul>
             </div>
-        </header>
-
-        <section>
-            <h2>Education</h2>
-            <p>
-                <strong>Mansoura National University, Egypt</strong><br>
-                <em>Bachelor's of communication and computer engineering, overall GPA 3.99</em><br>
-                Enrolled: September 2024 &mdash; Expected: June 2029
-            </p>
-            <ul>
-                <li>Relevant Coursework: CS50 (Harvard), Deep Learning (Stanford), Data Structures & Algorithms, Digital Electronics, Computer Organization, Introduction to Programming</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills">
-                <div class="skills-list">
-                    <strong>Programming Languages:</strong> Java, Python, CSS, C, C++<br>
-                    <strong>Frameworks/Technologies:</strong> Express, MySQL<br>
-                    <strong>Development Tools:</strong> VS Code, Git, Github
-                </div>
-                <div class="skills-list">
-                    <strong>Languages:</strong><br>
-                    English (Fluent)<br>
-                    Arabic (Native)<br>
-                    German (A2)
-                </div>
+        </div>
+        <!-- Formula MNU -->
+        <div class="timeline-container right">
+            <div class="timeline-content">
+                <h3>Formula MNU</h3>
+                <span class="timeline-role">Software & Autonomous Systems</span>
+                <div class="timeline-location">Hybrid</div>
+                <div class="timeline-date">November 2024 &ndash; Present</div>
+                <ul>
+                    <li>Worked in the engine team to develop the software of the engine for the Formula MNU project.</li>
+                    <li>Contributed to the autonomous team on developing self-driving features.</li>
+                </ul>
             </div>
-        </section>
-
-        <section>
-            <h2>Leadership / Experience</h2>
-            <div class="experience">
-                <div class="exp-list">
-                    <strong>A&A</strong> <span style="color:#555;">(Remote, Aug 2024 &mdash; Present)</span>
-                    <ul>
-                        <li>Software Engineer</li>
-                    </ul>
-                    <strong>Formula MNU</strong> <span style="color:#555;">(Hybrid, Nov 2024 &mdash; Present)</span>
-                    <ul>
-                        <li>Work in the engine team to develop the software of the engine</li>
-                        <li>Work in the autonomous team</li>
-                    </ul>
-                    <strong>Breakin Point</strong> <span style="color:#555;">(On site, Feb 2025 &mdash; Mar 2025)</span>
-                    <ul>
-                        <li>Member of the Hardware Camp</li>
-                    </ul>
-                </div>
+        </div>
+        <!-- Breakin Point -->
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h3>Breakin Point</h3>
+                <span class="timeline-role">Hardware Camp Member</span>
+                <div class="timeline-location">On site</div>
+                <div class="timeline-date">February 2025 &ndash; March 2025</div>
+                <ul>
+                    <li>Participated as a member of the Hardware Camp, gaining hands-on experience with hardware projects.</li>
+                </ul>
             </div>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <span class="project-title">Student Engineering Competition Project</span> <span class="project-date">November 2024</span>
-                <div class="project-details">
-                    <ul>
-                        <li>Developed the software of the engine in a Formula Car for a competition in El Alamein City with Middle East universities</li>
-                        <li>Worked on an electric car to make it self-driving at the university and developed the software for the car</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project">
-                <span class="project-title">Smart Fire-Detection Robot Car (Self-Initiated Project)</span> <span class="project-date">October 2024</span>
-                <div class="project-details">
-                    <p>Designed and developed a smart remote-controlled robotic car capable of semi-autonomous movement based on environmental data.</p>
-                    <ul>
-                        <li>Equipped with sensors to detect heat and smoke, suitable for applications such as fire rescue or environmental monitoring</li>
-                        <li><strong>Key Features:</strong>
-                            <ul>
-                                <li>MQ-2 Smoke Sensor: Detects smoke and flammable gases</li>
-                                <li>DHT11 Temperature Sensor: Measures ambient temperature and detects abnormal changes</li>
-                                <li>Bluetooth Module: Allows remote control via mobile app or dedicated system</li>
-                                <li>DC Motors: Provide movement and respond to manual or autonomous commands</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Uncomment the next line if you want to show your quiz/MCQ image as part of your site -->
-        <!-- <img src="IMAGE_1_PATH_HERE" alt="Physics MCQ Answers" class="resume-img"> -->
+        </div>
     </div>
-</body>
-</html>
+</section>
+
+<style>
+#experience {
+    margin-top: 50px;
+}
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+    z-index: 1;
+}
+.timeline-container {
+    padding: 20px 30px;
+    position: relative;
+    width: 50%;
+}
+.timeline-container.left {
+    left: 0;
+}
+.timeline-container.right {
+    left: 50%;
+}
+.timeline-content {
+    background: #261e3b;
+    color: #fff;
+    padding: 22px 28px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(44,26,94,0.2);
+    margin-bottom: 30px;
+}
+.timeline-container.left .timeline-content {
+    margin-right: 25px;
+}
+.timeline-container.right .timeline-content {
+    margin-left: 25px;
+}
+.timeline-date {
+    font-size: 1.08rem;
+    color: #bb86fc;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.timeline-role {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+}
+.timeline-location {
+    font-size: 0.98rem;
+    color: #f3e1ff;
+    margin-bottom: 8px;
+}
+@media (max-width: 900px) {
+    .timeline-container {
+        width: 100%;
+        left: 0 !important;
+    }
+    .timeline::after {
+        left: 30px;
+    }
+    .timeline-content {
+        margin-left: 50px;
+        margin-right: 0;
+    }
+}
+</style>
