@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #171c27;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e2230;
+  padding: 0 32px;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #3c7aff;
+  background: #fff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+.nav-links li a:hover {
+  color: #3c7aff;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+section {
+  margin-bottom: 70px;
+}
+.about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+.about-section p {
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.tech-grid h3 {
+  color: #3c7aff;
+  margin-bottom: 8px;
+}
+.tech-grid ul {
+  list-style: disc inside;
+  padding: 0;
+}
+.experience-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #28304a;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+.timeline-item {
+  padding: 20px 40px;
+  width: 50%;
+  position: relative;
+}
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+.timeline-content {
+  background: #231d37;
+  border-radius: 10px;
+  padding: 26px 28px;
+  box-shadow: 0 6px 32px rgba(44,26,94,0.18);
+  position: relative;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.timeline-role {
+  display: block;
+  color: #3c7aff;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+.timeline-date {
+  font-size: 1rem;
+  color: #b7b7c6;
+  margin-bottom: 8px;
+  display: block;
+}
+.timeline-content ul {
+  margin-top: 10px;
+  padding-left: 16px;
+}
+@media (max-width: 900px) {
+  .timeline::after { left: 10px; }
+  .timeline-item, .timeline-item.left, .timeline-item.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 20px 20px;
+  }
+}
+.projects-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.projects-section p {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 1.1rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 28px;
+}
+.project-card {
+  background: #231d37;
+  border-radius: 12px;
+  padding: 26px 22px 18px 22px;
+  box-shadow: 0 4px 16px rgba(44,26,94,0.15);
+  color: #fff;
+}
+.project-title {
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+.project-date {
+  font-size: 0.98rem;
+  color: #b7b7c6;
+  margin-bottom: 6px;
+}
+.tags {
+  margin-top: 10px;
+}
+.tags span {
+  display: inline-block;
+  background: #3c7aff22;
+  color: #3c7aff;
+  border-radius: 6px;
+  font-size: 0.93rem;
+  padding: 3px 12px;
+  margin: 0 6px 4px 0;
+}
+.contact-section h2 {
+  font-size: 2rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 550px;
+  margin: 0 auto 32px auto;
+}
+.contact-form input,
+.contact-form textarea {
+  background: #23293c;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 14px;
+  outline: none;
+  margin-bottom: 3px;
+}
+.contact-form button {
+  background: #3c7aff;
+  border: none;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 6px;
+  padding: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background 0.18s;
+}
+.contact-form button:hover {
+  background: #185ae6;
+}
+.contact-info {
+  text-align: center;
+  color: #c7c7d4;
+  font-size: 1.08rem;
+}
+.contact-info a {
+  color: #3c7aff;
+  text-decoration: none;
+}
+@media (max-width: 700px) {
+  main { padding: 10px 2vw; }
+  .tech-grid, .projects-grid { grid-template-columns: 1fr; }
+}
